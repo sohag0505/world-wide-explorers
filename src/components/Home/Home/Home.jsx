@@ -1,5 +1,6 @@
 import Gallery from "../Gallery/Gallery";
 import ServiceTab from "../ServiceTab/ServiceTab";
+import SliderPlace from "../SliderPlace/SliderPlace";
 import TopSection from "../TopSection/TopSection";
 import TravelExperience from "../TravelExperience/TravelExperience";
 
@@ -8,6 +9,7 @@ const Home = () => {
     <div className="mt-12">
       <TopSection></TopSection>
       <ServiceTab></ServiceTab>
+      <SliderPlace></SliderPlace>
       <TravelExperience></TravelExperience>
       <Gallery></Gallery>
     </div>

@@ -19,17 +19,20 @@ const Gallery = () => {
   ];
   return (
     <div>
-      <h2 className="font-bold text-4xl mt-24 mb-12">
-        Visit our customers tour gallery
+      <h2 className="font-bold font-serif text-4xl mt-24 mb-12">
+        Visit our customers{" "}
+        <span className="text-sky-500 animate-pulse">Tour Gallery</span>
       </h2>
       <div className="gallery-container ">
         {images.map((image, index) => (
-          <div key={index} className="gallery">
-            <img
-              src={image}
-              alt={`Image ${index + 1}`}
-              className="w-full h-full object-cover rounded-lg"
-            />
+          <div key={index} className="gallery ">
+            <div className="overflow-hidden rounded-md">
+              <img
+                src={image}
+                alt={`Image ${index + 1}`}
+                className="w-full h-full object-cover rounded-lg hover:scale-125 duration-500"
+              />
+            </div>
           </div>
         ))}
       </div>
