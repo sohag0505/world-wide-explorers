@@ -1,0 +1,57 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "_id": "1",
+      "name": "Cox's Bazar",
+      "location": "Chitagong",
+      "img": "https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/news/2669022.webp",
+      "desc": "This is cox's Bazar.",
+      "price": "89",
+      "comments": []
+    },
+    {
+      "_id": "2",
+      "name": "Cox's Bazar",
+      "location": "Chitagong",
+      "img": "https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/news/2669022.webp",
+      "desc": "This is cox's Bazar.",
+      "price": "89",
+      "comments": []
+    },
+    {
+      "_id": "3",
+      "name": "Cox's Bazar",
+      "location": "Chitagong",
+      "img": "https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/news/2669022.webp",
+      "desc": "This is cox's Bazar.",
+      "price": "89",
+      "comments": []
+    },
+    {
+      "_id": "4",
+      "name": "Cox's Bazar",
+      "location": "Chitagong",
+      "img": "https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/news/2669022.webp",
+      "desc": "This is cox's Bazar.",
+      "price": "89",
+      "comments": []
+    },
+    {
+      "_id": "5",
+      "name": "Dhaka",
+      "location": "dhaka",
+      "img": "dfjjkd",
+      "desc": "ajdfjkdfkjd",
+      "price": "89",
+      "ratings": "5",
+      "comments": [
+        {
+          "text": "wonderful",
+          "author": "sohag",
+          "_id": "64ec58e5424f64b36fab89f3"
+        }
+      ]
+    }
+  ]
+}
