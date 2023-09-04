@@ -18,7 +18,7 @@ const Gallery = () => {
     // Add more image URLs here
   ];
   return (
-    <div>
+    <div className="my-20">
       <h2 className="font-bold font-serif text-4xl mt-24 mb-12">
         Visit our customers{" "}
         <span className="text-sky-500 animate-pulse">Tour Gallery</span>

@@ -1,6 +1,6 @@
 import Card from "../Card/Card";
 import Gallery from "../Gallery/Gallery";
-import ServiceTab from "../ServiceTab/ServiceTab";
+import OurServices from "../OurServices/OurServices";
 import SliderPlace from "../SliderPlace/SliderPlace";
 import TopSection from "../TopSection/TopSection";
 import TravelExperience from "../TravelExperience/TravelExperience";
@@ -10,7 +10,7 @@ const Home = () => {
     <div className="mt-12">
       <TopSection></TopSection>
       <Card></Card>
-      <ServiceTab></ServiceTab>
+      <OurServices></OurServices>
       <SliderPlace></SliderPlace>
       <TravelExperience></TravelExperience>
       <Gallery></Gallery>

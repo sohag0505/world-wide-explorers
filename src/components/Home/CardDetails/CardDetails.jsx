@@ -1,12 +1,12 @@
-import React from "react";
+import { Rating } from "@smastrom/react-rating";
+import "@smastrom/react-rating/style.css";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import ReactStars from "react-rating-stars-component";
 import { Link } from "react-router-dom";
 
 const CardDetails = ({ service }) => {
   const { name, location, img, desc, _id } = service;
   // console.log(service);
-  const ratingChanged = () => {};
+
   return (
     <div>
       <div className="card w-full bg-base-100 shadow-xl">
@@ -24,12 +24,8 @@ const CardDetails = ({ service }) => {
             <button className="btn bg-sky-400 mr-6 btn-sm">
               <Link to={`/service/${_id}`}>Buy Now</Link>
             </button>
-            <ReactStars
-              count={5}
-              onChange={ratingChanged}
-              size={30}
-              activeColor="#ffd700"
-            />
+
+            <Rating style={{ maxWidth: 180 }} value={3} readOnly />
           </div>
         </div>
       </div>
