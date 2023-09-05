@@ -1,4 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
+import AddFeature from "../Admin/AddFeature/AddFeature";
+import AllFeatures from "../Admin/AllFeatures/AllFeatures";
 import Home from "../Home/Home/Home";
 import MoreCardDetails from "../Home/MoreCardDetails/MoreCardDetails";
 import Main from "../Layout/Main";
@@ -13,6 +15,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "/addFeature",
+        element: <AddFeature></AddFeature>,
+      },
+      {
+        path: "/allFeature",
+        element: <AllFeatures></AllFeatures>,
       },
       {
         path: "/login",

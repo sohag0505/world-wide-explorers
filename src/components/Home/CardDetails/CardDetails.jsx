@@ -4,7 +4,8 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const CardDetails = ({ service }) => {
-  const { name, location, img, desc, _id } = service;
+  const { name, location, img, desc, _id, ratings } = service;
+
   // console.log(service);
 
   return (
@@ -25,7 +26,7 @@ const CardDetails = ({ service }) => {
               <Link to={`/service/${_id}`}>Buy Now</Link>
             </button>
 
-            <Rating style={{ maxWidth: 180 }} value={3} readOnly />
+            <Rating style={{ maxWidth: 180 }} value={ratings} readOnly />
           </div>
         </div>
       </div>

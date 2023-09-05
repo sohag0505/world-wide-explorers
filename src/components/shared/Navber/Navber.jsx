@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
+import logo from "../../../assets/travel-logo.png";
 import { AuthContext } from "../../providers/AuthProvider";
+import "./Navber.css";
 
 const Navbar = () => {
   const { logOut, user } = useContext(AuthContext);
@@ -8,6 +10,12 @@ const Navbar = () => {
     <>
       <li>
         <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="/addFeature">Add Feature</Link>
+      </li>
+      <li>
+        <Link to="/allFeature">All Features</Link>
       </li>
     </>
   );
@@ -26,15 +34,10 @@ const Navbar = () => {
           </div>
           <div className="normal-case text-xl flex justify-center items-center">
             <div>
-              <img
-                src="https://e7.pngegg.com/pngimages/893/122/png-clipart-travel-agent-trip-planner-logo-travel-text-backpack-thumbnail.png"
-                height={40}
-                width={60}
-                alt=""
-              />
+              <img src={logo} height={40} width={60} alt="" />
             </div>
             <div>
-              <h2 className="text-lg font-serif text-sky-500  font-semibold">
+              <h2 className="text-lg NormalCharacterStyle">
                 World Wide Explorers
               </h2>
             </div>

@@ -1,8 +1,16 @@
+import { FaXing } from "react-icons/fa";
+
 const TravelExperience = () => {
   return (
     <div className="grid grid-cols-2 gap-10 mb-4">
       <div>
-        <h2 className="text-5xl font-serif mt-16 ">
+        <div className="flex items-center mb-2">
+          <FaXing className="text-4xl text-sky-700" />
+          <h2 className="text-sm NormalCharacterStyle text-white bg-sky-500 rounded-md p-1">
+            World Wide Explorers
+          </h2>
+        </div>
+        <h2 className="text-5xl font-serif ">
           With our all experience <br /> to{" "}
           <span className="text-sky-500 animate-pulse">we will serve you</span>
         </h2>

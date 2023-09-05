@@ -22,3 +22,8 @@
   animation: custom-bounce 3s infinite;
   /* Adjust duration as needed */
 }
+
+.NormalCharacterStyle {
+  font-family: Algerian;
+  color: white;
+}

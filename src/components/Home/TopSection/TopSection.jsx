@@ -1,11 +1,18 @@
-import React from "react";
+import { FaXing } from "react-icons/fa";
+
 import "./TopSection.css";
 
 const TopSection = () => {
   return (
     <div className="grid grid-cols-2 gap-10 mt-16 mb-5">
       <div>
-        <h2 className="text-5xl font-serif mt-16 ">
+        <div className="flex items-center mb-2">
+          <FaXing className="text-4xl text-sky-700" />
+          <h2 className="text-sm NormalCharacterStyle text-white bg-sky-500 rounded-md p-1">
+            World Wide Explorers
+          </h2>
+        </div>
+        <h2 className="text-5xl font-serif  ">
           Trevellings opens the door <br /> to{" "}
           <span className="text-sky-500 animate-pulse">creating memories</span>
         </h2>
