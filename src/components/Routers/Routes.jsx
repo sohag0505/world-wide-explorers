@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import AddFeature from "../Admin/AddFeature/AddFeature";
 import AllFeatures from "../Admin/AllFeatures/AllFeatures";
+import UpdateFeatures from "../Admin/UpdatefFeatures/UpdateFeatures";
 import Home from "../Home/Home/Home";
 import MoreCardDetails from "../Home/MoreCardDetails/MoreCardDetails";
 import Main from "../Layout/Main";
@@ -23,6 +24,14 @@ const router = createBrowserRouter([
       {
         path: "/allFeature",
         element: <AllFeatures></AllFeatures>,
+      },
+      {
+        path: "/updateFeature/:updateId",
+        element: <UpdateFeatures></UpdateFeatures>,
+        loader: ({ params }) =>
+          fetch(
+            `https://travelling-project-pi.vercel.app/services/${params.updateId}`
+          ),
       },
       {
         path: "/login",

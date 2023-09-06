@@ -9,7 +9,6 @@ const AllFeatures = () => {
       .then((res) => res.json())
       .then((data) => {
         setAllFeatures(data.data);
-
         console.log(data.data);
       });
   }, []);

@@ -1,3 +1,5 @@
+// import { toast } from "react-hot-toast";
+
 const AddFeature = () => {
   const handleAddService = (event) => {
     event.preventDefault();
@@ -22,7 +24,7 @@ const AddFeature = () => {
       //   email: user.email,
     };
 
-    console.log(sellerInfo);
+    // console.log(sellerInfo);
 
     fetch("https://travelling-project-pi.vercel.app/services", {
       method: "POST",
@@ -33,10 +35,10 @@ const AddFeature = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        if (data.insertedId) {
+        console.log(data.data);
+        if (data.data.insertedId) {
           alert("User added successfully");
-          //   toast.success("Added Toy successfully!");
+          // toast.success("Added Toy successfully!");
         }
       });
   };
