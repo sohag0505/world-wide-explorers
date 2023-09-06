@@ -1,18 +1,17 @@
 import { FaXing } from "react-icons/fa";
-
 import "./TopSection.css";
 
 const TopSection = () => {
   return (
-    <div className="grid grid-cols-2 gap-10 mt-16 mb-5">
+    <div className="grid md:grid-cols-2 grid-cols-1 gap-10 md:mt-16 mt-8 p-2 mb-5">
       <div>
         <div className="flex items-center mb-2">
-          <FaXing className="text-4xl text-sky-700" />
-          <h2 className="text-sm NormalCharacterStyle text-white bg-sky-500 rounded-md p-1">
+          <FaXing className="md:text-4xl text-3xl text-sky-700" />
+          <h2 className="text-sm md:NormalCharacterStyle text-white bg-sky-500 rounded-md p-1">
             World Wide Explorers
           </h2>
         </div>
-        <h2 className="text-5xl font-serif  ">
+        <h2 className="md:text-5xl text-2xl font-serif  ">
           Trevellings opens the door <br /> to{" "}
           <span className="text-sky-500 animate-pulse">creating memories</span>
         </h2>
@@ -29,7 +28,7 @@ const TopSection = () => {
             placeholder="location"
             className="input input-bordered w-full max-w-xs"
           />
-          <button className="btn bg-sky-400 hover:bg-sky-600 ml-2">
+          <button className="btn bg-sky-400 hover:bg-sky-600 mt-2 md:ml-2">
             Search
           </button>
         </div>

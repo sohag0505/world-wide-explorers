@@ -2,17 +2,8 @@ import React from "react";
 import { toast } from "react-hot-toast";
 import { Link } from "react-router-dom";
 
-const ShowAllFeatures = ({ allFeature }) => {
-  const {
-    _id,
-    name,
-    price,
-    seat,
-    img,
-    sellerName,
-    sellerEmail,
-    setAllFeature,
-  } = allFeature;
+const ShowAllFeatures = ({ allFeature, allFeatures, setAllFeatures }) => {
+  const { _id, name, price, seat, img, sellerName, sellerEmail } = allFeature;
 
   const handleDeleteFeature = (_id) => {
     console.log("delete", _id);
@@ -22,12 +13,12 @@ const ShowAllFeatures = ({ allFeature }) => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        if (data.deletedCount > 0) {
+        if (data.data.deletedCount > 0) {
           toast.success("Deleted successfully!");
-          const remaining = allFeature.filter(
-            (allFeature) => allFeature._id !== _id
-          );
-          setAllFeature(remaining);
+          console.log(allFeatures);
+
+          const remaining = allFeatures.filter((all) => all._id !== _id);
+          setAllFeatures(remaining);
         }
       });
   };
@@ -48,12 +39,12 @@ const ShowAllFeatures = ({ allFeature }) => {
       <td>{price}</td>
       <td>{seat}</td>
       <th>
-        <button className="btn bg-sky-400 mr-6 btn-sm">
+        <button className="btn bg-sky-400 hover:bg-sky-600">
           <Link to={`/updateFeature/${_id}`}>Update Feature</Link>
         </button>
         <button
           onClick={() => handleDeleteFeature(allFeature._id)}
-          className="btn btn-outline btn-secondary ml-4"
+          className="btn  btn-secondary ml-4"
         >
           Delete
         </button>

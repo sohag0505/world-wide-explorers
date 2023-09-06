@@ -2,15 +2,15 @@ import { FaXing } from "react-icons/fa";
 
 const TravelExperience = () => {
   return (
-    <div className="grid grid-cols-2 gap-10 mb-4">
-      <div>
+    <div className="grid md:grid-cols-2 grid-cols-1 gap-10 mb-4">
+      <div className="md:p-0 p-2">
         <div className="flex items-center mb-2">
           <FaXing className="text-4xl text-sky-700" />
-          <h2 className="text-sm NormalCharacterStyle text-white bg-sky-500 rounded-md p-1">
+          <h2 className="text-sm md:NormalCharacterStyle text-white bg-sky-500 rounded-md p-1">
             World Wide Explorers
           </h2>
         </div>
-        <h2 className="text-5xl font-serif ">
+        <h2 className="md:text-5xl text-3xl p-1 font-serif ">
           With our all experience <br /> to{" "}
           <span className="text-sky-500 animate-pulse">we will serve you</span>
         </h2>
@@ -20,14 +20,14 @@ const TravelExperience = () => {
           officiis culpa incidunt praesentium eos laborum aliquam nulla
           repudiandae! Ex delectus consectetur quae unde.
         </p>
-        <div className="stats shadow mt-12">
+        <div className="md:stats shadow mt-12">
           <div className="stat">
-            <div className="stat-figure text-secondary">
+            <div className="stat-figure  text-secondary">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                className="inline-block w-8 h-8 stroke-current text-sky-500"
+                className="inline-block  w-8 h-8 stroke-current text-sky-500"
               >
                 <path
                   strokeLinecap="round"

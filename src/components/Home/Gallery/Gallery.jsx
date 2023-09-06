@@ -18,15 +18,15 @@ const Gallery = () => {
     // Add more image URLs here
   ];
   return (
-    <div className="my-20">
-      <h2 className="font-bold font-serif text-4xl mt-24 mb-12">
+    <div className="md:my-20 my-5">
+      <h2 className="font-bold font-serif md:text-4xl text-3xl ml-2 mt-24 mb-12">
         Visit our customers{" "}
         <span className="text-sky-500 animate-pulse">Tour Gallery</span>
       </h2>
       <div className="gallery-container ">
         {images.map((image, index) => (
           <div key={index} className="gallery ">
-            <div className="overflow-hidden rounded-md">
+            <div className="overflow-hidden md:rounded-md rounded-sm">
               <img
                 src={image}
                 alt={`Image ${index + 1}`}

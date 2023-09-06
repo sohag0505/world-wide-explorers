@@ -1,4 +1,4 @@
-// import { toast } from "react-hot-toast";
+import { toast } from "react-hot-toast";
 
 const AddFeature = () => {
   const handleAddService = (event) => {
@@ -36,10 +36,8 @@ const AddFeature = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data.data);
-        if (data.data.insertedId) {
-          alert("User added successfully");
-          // toast.success("Added Toy successfully!");
-        }
+
+        toast.success("Added successfully!");
       });
   };
   return (

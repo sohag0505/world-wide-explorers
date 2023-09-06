@@ -28,7 +28,7 @@ const SliderPlace = () => {
         >
           <SwiperSlide>
             <img
-              className="object-cover w-full h-72"
+              className="object-cover w-full h-72  "
               src="https://i.pinimg.com/564x/6b/5b/59/6b5b590e20bd400d9c266a59802e72f5.jpg"
               alt=""
             />

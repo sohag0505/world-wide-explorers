@@ -3,3 +3,9 @@
   color: #257cb8;
   color: rgb(37, 124, 184);
 }
+
+@media screen and (max-width: 576px) {
+  .NormalCharacterStyle {
+    display: none;
+  }
+}

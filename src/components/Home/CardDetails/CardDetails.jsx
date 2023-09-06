@@ -10,9 +10,9 @@ const CardDetails = ({ service }) => {
 
   return (
     <div>
-      <div className="card w-full bg-base-100 shadow-xl">
+      <div className="card w-full h-96 bg-base-100 shadow-xl">
         <figure>
-          <img src={img} alt="Shoes" />
+          <img src={img} className="object-cover w-full h-60" alt="Shoes" />
         </figure>
         <div className="card-body">
           <div className="flex justify-center items-center">
@@ -22,8 +22,8 @@ const CardDetails = ({ service }) => {
           </div>
           <p>{desc}</p>
           <div className="flex justify-center items-center">
-            <button className="btn bg-sky-400 mr-6 btn-sm">
-              <Link to={`/service/${_id}`}>Buy Now</Link>
+            <button className="btn bg-sky-400 hover:bg-sky-600 mr-6 btn-sm">
+              <Link to={`/service/${_id}`}>More Details</Link>
             </button>
 
             <Rating style={{ maxWidth: 180 }} value={ratings} readOnly />
