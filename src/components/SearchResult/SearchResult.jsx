@@ -16,10 +16,15 @@ const SearchResult = () => {
   }, []);
 
   return (
-    <div>
-      {datas.map((data) => (
-        <ShowSearchDetails key={data._id} data={data}></ShowSearchDetails>
-      ))}
+    <div className="mt-24">
+      <h2 className="md:text-4xl text-3xl ml-1 font-semibold font-serif mb-12">
+        Our <span className="text-sky-500 animate-pulse">Featured Tours</span>
+      </h2>
+      <div className="grid grid-cols-2 gap-10">
+        {datas.map((data) => (
+          <ShowSearchDetails key={data._id} data={data}></ShowSearchDetails>
+        ))}
+      </div>
     </div>
   );
 };
