@@ -7,6 +7,7 @@ import MoreCardDetails from "../Home/MoreCardDetails/MoreCardDetails";
 import Main from "../Layout/Main";
 import Login from "../Login/Login";
 import Registation from "../Registration/Registation";
+import SearchResult from "../SearchResult/SearchResult";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "/searchResult",
+        element: <SearchResult />,
       },
       {
         path: "/addFeature",

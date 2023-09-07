@@ -1,7 +1,18 @@
+import { useState } from "react";
 import { FaXing } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { getSearchName } from "../../SearchResult/SearchResult";
 import "./TopSection.css";
-
 const TopSection = () => {
+  const [inputValue, setInputValue] = useState("");
+
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  };
+  const handleButtonClick = () => {
+    getSearchName(inputValue);
+  };
+
   return (
     <div className="grid md:grid-cols-2 grid-cols-1 gap-10 md:mt-16 mt-8 p-2 mb-5">
       <div>
@@ -27,10 +38,18 @@ const TopSection = () => {
             type="text"
             placeholder="location"
             className="input input-bordered w-full max-w-xs"
+            onChange={handleInputChange}
           />
-          <button className="btn bg-sky-400 hover:bg-sky-600 mt-2 md:ml-2">
-            Search
-          </button>
+
+          <Link to="/searchResult">
+            {" "}
+            <button
+              className="btn bg-sky-400 hover:bg-sky-600 mt-2 md:ml-2"
+              onClick={handleButtonClick}
+            >
+              Search
+            </button>
+          </Link>
         </div>
       </div>
       <div className="grid grid-cols-3 gap-5">
