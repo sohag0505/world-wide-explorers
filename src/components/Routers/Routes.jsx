@@ -6,6 +6,7 @@ import Home from "../Home/Home/Home";
 import MoreCardDetails from "../Home/MoreCardDetails/MoreCardDetails";
 import Main from "../Layout/Main";
 import Login from "../Login/Login";
+import Privacy from "../PrivacyPolicy/Privacy";
 import Registation from "../Registration/Registation";
 import SearchResult from "../SearchResult/SearchResult";
 
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "/privacy",
+        element: <Privacy></Privacy>,
       },
       {
         path: "/searchResult",

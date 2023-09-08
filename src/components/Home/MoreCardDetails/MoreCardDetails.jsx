@@ -6,7 +6,7 @@ const MoreCardDetails = () => {
   const { name, location, desc, img, seat } = service.data[0];
   return (
     <div>
-      <div className="grid grid-cols-2 gap-20 my-12">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-20 my-12">
         <div>
           <img
             src={img}

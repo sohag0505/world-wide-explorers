@@ -20,7 +20,7 @@ const ShowSearchDetails = ({ data }) => {
           Back to home
         </button>
       ) : (
-        <div className="grid grid-cols-2 gap-4  shadow-xl rounded-lg mb-12">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-4  shadow-xl rounded-lg md:mb-12 md:p-0 p-2">
           <div>
             <img
               src={img}
@@ -44,7 +44,7 @@ const ShowSearchDetails = ({ data }) => {
               </Link>
               <button
                 onClick={handleBack}
-                className="btn bg-slate-400 hover:bg-slate-600 mr-6 btn-sm mt-2"
+                className="btn bg-slate-400 hover:bg-slate-600 mr-6 btn-sm mt-2 md:mb-0 mb-4"
               >
                 Back To Home
               </button>
