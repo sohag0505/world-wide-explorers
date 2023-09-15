@@ -9,6 +9,7 @@ import Login from "../Login/Login";
 import Privacy from "../PrivacyPolicy/Privacy";
 import Registation from "../Registration/Registation";
 import SearchResult from "../SearchResult/SearchResult";
+import Terms from "../Terms/Terms";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "/terms",
+        element: <Terms></Terms>,
       },
       {
         path: "/privacy",
